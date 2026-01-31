@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Induction Invite</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #fff0f5;
+  text-align: center;
+  padding: 50px;
+}
+button {
+  padding: 15px 30px;
+  font-size: 18px;
+  margin: 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#yes {
+  background: #4CAF50;
+  color: white;
+}
+#no {
+  background: #f44336;
+  color: white;
+  position: absolute;
+}
+#yay {
+  display: none;
+  margin-top: 40px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Tobi, will you come for my induction?</h1>
+
+<button id="yes">Yes 😊</button>
+<button id="no">No 😬</button>
+
+<div id="yay">
+  <h2>Yay!!! 🎉</h2>
+  <p>No seems a bit shy 😄</p>
+</div>
+
+<script>
+document.getElementById("yes").onclick = function () {
+  document.getElementById("yay").style.display = "block";
+};
+
+document.getElementById("no").onmouseover = function () {
+  this.style.left = Math.random() * 80 + "%";
+  this.style.top = Math.random() * 80 + "%";
+};
+</script>
+
+</body>
+</html>
